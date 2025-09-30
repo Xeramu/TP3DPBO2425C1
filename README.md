@@ -2,11 +2,17 @@
 
 ==<< diagram >>==
 
-![DiagramRelasi](https://github.com/user-attachments/assets/a8c150df-e365-4b7d-a6ca-dd3ce75a5e69)
+![DiagramRelasi](https://github.com/user-attachments/assets/4af1471a-5a3e-403e-846c-9867290a1a12)
 
 ==<< atribut & method >>==
 
+
 ==<< desain >>==
+1. Class PERSON sebagai parent class
+2. Class DOCTOR dan PATIENT inherit dari PERSON
+3. Class DOCTOR USE class SCHEDULE
+4. Class PATIENT USE class MEDICINE
+5. Class HOSPITAL USE class DOCTOR dan class MEDICINE
 
 ==<< alur >>==
 1. program print objek awal
@@ -27,4 +33,6 @@
 
 <img width="556" height="854" alt="printsetelahadd" src="https://github.com/user-attachments/assets/7950436b-fcc3-40bb-b57b-fa2253d658bf" />
 
-4. Jawa
+3. Jawa
+
+<img width="319" height="820" alt="Screenshot 2025-09-30 230141" src="https://github.com/user-attachments/assets/3908cec4-9475-4740-ac51-1e45e3bde541" />

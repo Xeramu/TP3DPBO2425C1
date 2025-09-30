@@ -10,6 +10,6 @@ class Medicine:
     def get_dose(self):
         return self.dose
 
-    # fungsi print obat
+    #fungsi print obat
     def print_medicine(self):
         print(f"- Medicine: {self.name} ({self.dose})")

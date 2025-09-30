@@ -7,23 +7,23 @@ class Hospital:
         self.patients = []
         self.doctors = []
 
-    # getter & setter
+    #get set
     def set_hospital_name(self, name):
         self.hospital_name = name
 
     def get_hospital_name(self):
         return self.hospital_name
 
-    # fungsi nambahin pasien dan dokter
+    #fungsi add pasien dan dokter
     def add_patient(self, patient: Patient):
         self.patients.append(patient)
 
     def add_doctor(self, doctor: Doctor):
         self.doctors.append(doctor)
 
-    # fungsi print
+    #fungsi print pasien dan dokter
     def print_info(self):
-        print(f"=>> RSUD {self.hospital_name} <<=")
+        print(f"\n=>> RSUD {self.hospital_name} <<=")
 
         print("\nList Doctors:\n")
         for d in self.doctors:

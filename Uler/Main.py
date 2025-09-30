@@ -5,10 +5,10 @@ from Patient import Patient
 from Medicine import Medicine
 
 def main():
-    # buat nama rumah sakitnya
+    #buat nama rumah sakitnya
     h = Hospital("El Angjay")
 
-    # Data awal
+    #Data awal
     d1 = Doctor("Dr. Hadiyanto", "Dentist")
     d1.add_schedule(Schedule("Monday", "09:00 - 12:00", "101"))
     d1.add_schedule(Schedule("Wednesday", "13:00 - 16:00", "102"))
@@ -29,10 +29,10 @@ def main():
     h.add_patient(p1)
     h.add_patient(p2)
 
-    # print sebelum tambah
+    #print sebelum tambah
     h.print_info()
 
-    # minta tambah data dari user
+    #minta tambah data dari user
     print("\n=== Tambah Dokter Baru ===")
     d_name = input("Nama Dokter: ")
     d_spec = input("Spesialisasi: ")
@@ -54,7 +54,7 @@ def main():
     p_user.add_medicine(Medicine(m_name, m_dose))
     h.add_patient(p_user)
 
-    # print sesudah tambah
+    #print sesudah tambah
     h.print_info()
 
 if __name__ == "__main__":

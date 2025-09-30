@@ -7,18 +7,18 @@ class Doctor(Person):
         self.specialization = specialization
         self.schedules = []
 
-    # getter & setter
+    #get set
     def set_specialization(self, specialization):
         self.specialization = specialization
 
     def get_specialization(self):
         return self.specialization
 
-    # fungsi add schedule
+    #fungsi add schedule
     def add_schedule(self, schedule: Schedule):
         self.schedules.append(schedule)
 
-    # fungsi print
+    #fungsi print dokter
     def print_doctor(self):
         print(f"Doctor: {self.get_name()}, Specialization: {self.specialization}")
         print("Schedules:")

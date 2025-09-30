@@ -4,6 +4,6 @@ class Schedule:
         self.time = time
         self.room = room
 
-    # Fungsi print schedule
+    #fungsi print schedule
     def print_schedule(self):
         print(f"- {self.day} at {self.time} (Room: {self.room})")

@@ -7,18 +7,18 @@ class Patient(Person):
         self.disease = disease
         self.medicines: list[Medicine] = []
 
-    # getter & setter
+    #get set
     def set_disease(self, disease: str):
         self.disease = disease
 
     def get_disease(self) -> str:
         return self.disease
 
-    # fungsi add obat
+    #fungsi add obat
     def add_medicine(self, m: Medicine):
         self.medicines.append(m)
 
-    # fungsi print pasien
+    #fungsi print pasien
     def print_patient(self):
         print(f"Patient: {self.get_name()}, Disease: {self.disease}")
         print(" Medicines:")

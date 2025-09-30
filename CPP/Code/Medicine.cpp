@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 class Medicine {
@@ -10,9 +9,15 @@ private:
 public:
     Medicine(string name, string dose) : name(name), dose(dose) {}
 
-    string getName() const { return name; }
-    string getDose() const { return dose; }
+    //get set
+    string getName() const { 
+        return name; 
+    }
+    string getDose() const { 
+        return dose; 
+    }
 
+    //fungsi print obat
     void printMedicine() const {
         cout << "- Medicine: " << name << " (" << dose << ")" << endl;
     }

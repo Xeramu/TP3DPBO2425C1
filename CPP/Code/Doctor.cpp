@@ -3,21 +3,40 @@
 using namespace std;
 
 class Doctor : public Person {
-  string specialization;
+private:
+    string specialization;
+    vector<Schedule> schedules;
 
 public:
-  Doctor(string name, string specialization) : Person(name), specialization(specialization) {}
+    Doctor(string name, string specialization) : Person(name), specialization(specialization) {}
 
-  // Setter & Getter
-  void setSpecialization(string specialization) {
-    this->specialization = specialization; }
-      string getSpecialization() const { return specialization;
-  } 
+    //get set
+    void setSpecialization(string specialization) { 
+      this->specialization = specialization; 
+    }
+    string getSpecialization() const { 
+      return specialization; 
+    }
 
-  void printDoctor() {
-    cout << "Doctor: " << getName() << ", Specialization: " << specialization << endl;
-  }
+    //fungsi add schedule
+    void addSchedule(const Schedule& s) {
+        schedules.push_back(s);
+    }
 
-  ~Doctor() {}
+    //fungsi print
+    void printDoctor() {
+        cout << "Doctor: " << getName() 
+             << ", Specialization: " << specialization << endl;
+        cout << "Schedules:" << endl;
+        if (schedules.empty()) {
+            cout << "- No schedule available." << endl;
+        } else {
+            for (auto& s : schedules) {
+                s.printSchedule();
+            }
+        }
+        cout << "================================================" << endl; // separator
+    }
 
+    ~Doctor() {}
 };

@@ -8,7 +8,6 @@ class Patient : public Person {
 
   string disease;
 
-
 public:
 
   Patient(string name, string disease)

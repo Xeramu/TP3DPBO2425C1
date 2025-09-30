@@ -1,37 +1,25 @@
-#include <iostream>
-
 #include <vector>
-using namespace std;
-
 
 class Patient : public Person {
-
-  string disease;
+private:
+    string disease;
+    vector<Medicine> medicines;
 
 public:
+    Patient(string name, string disease) : Person(name), disease(disease) {}
 
-  Patient(string name, string disease)
+    void setDisease(string disease) { this->disease = disease; }
+    string getDisease() const { return disease; }
 
-    : Person(name), disease(disease) {}
+    void addMedicine(const Medicine& m) {
+        medicines.push_back(m);
+    }
 
-
-  // Setter & Getter
-
-  void setDisease(string disease) { this->disease = disease;
-}
-
-  string getDisease() const { return disease; }
-
-
-  void printPatient() {
-
-    cout << "Patient: " << getName()
-
-       << ", Disease: " << disease << endl;
-
-  }
-
-
-  ~Patient() {}
-
+    void printPatient() {
+        cout << "Patient: " << getName() << ", Disease: " << disease << endl;
+        cout << " Medicines:" << endl;
+        for (auto& m : medicines) {
+            m.printMedicine();
+        }
+    }
 };

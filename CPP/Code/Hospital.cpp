@@ -14,6 +14,7 @@ public:
     hospitalName = name;
   }
 
+
   // Setter & Getter
   void setHospitalName(string name) { 
     hospitalName = name; }

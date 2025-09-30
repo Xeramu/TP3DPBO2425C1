@@ -6,9 +6,15 @@ class Medicine:
     # getter
     def get_name(self):
         return self.name
+    
+    def set_name(self, name: str) -> None:
+        self._name = str(name)
 
     def get_dose(self):
         return self.dose
+    
+    def set_dose(self, dose: str) -> None:
+        self._dose = str(dose)
 
     #fungsi print obat
     def print_medicine(self):

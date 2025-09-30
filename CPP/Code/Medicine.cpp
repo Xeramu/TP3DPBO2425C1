@@ -13,9 +13,18 @@ public:
     string getName() const { 
         return name; 
     }
+
+    void setName(string name) {
+			this->name = name;
+	}
+
     string getDose() const { 
         return dose; 
     }
+
+    void setDose(string dose) {
+			this->dose = dose;
+	}
 
     //fungsi print obat
     void printMedicine() const {

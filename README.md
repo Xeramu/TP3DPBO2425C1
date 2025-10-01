@@ -6,16 +6,20 @@
 
 ==<< atribut & method >>==
 1. Person (parent class)
+   
    Atribut:
    - string name buat nama orang (dokter/pasien)
+     
    Method:
    - getter buat nagmbil nama
    - setter buat ngubah nama
 
 2. Doctor (extend class person)
+
    Atribut:
    - string specialization buat spesialisasi dokter
    - List schedule buat daftar jadwal doketr (pake composition)
+   
    Method:
    - getter specialization buat nagmbil spesialisasi
    - setter specialazation buat ngubah spesialisasi
@@ -23,9 +27,11 @@
    - printDoctor buat nampilin info dokter dan jadwal dokter
 
 3. Patient (extend class person)
+
    Atribut:
    - string disease buat penyakit pasien
    - List medicine buat daftar obat pasien (pake composition)
+   
    Method:
    - getter disease buat nagmbil penyakit
    - setter disease buat ngubah penyakit
@@ -33,17 +39,21 @@
    - printPatient buat nampilin info pasien dan daftar obat
 
 4. Schedule
+
    Atribut:
    - string day buat hari jadwal
    - string time buat waktu jadwal
    - string room buat ruangan
+   
    Method:
    - printSchedule buat nampilin jadwal
 
 5. Medicine
+
    Atribut:
    - string name buat nama obat
    - string dose buat dosis obat
+   
    Method:
    - getter name buat nagmbil nama obat
    - setter name buat ngubah nama obat
@@ -52,10 +62,12 @@
    - printMedicine buat nampilin info obat
 
 6. Hospital
+
    Atribut:
    - string hispitalname buat nama RS
    - List Doctor buat daftar dokter (pake aggregation)
    - List Patients buat daftar pasien (pake aggregation)
+   
    Method:
    - getter hospitalname buat nagmbil nama RS
    - setter hospitalname buat ngubah nama RS
@@ -71,25 +83,31 @@
 4. Class PATIENT USE class MEDICINE
 5. Class HOSPITAL USE class DOCTOR dan class MEDICINE
 
+
 Inheritance
 - Person sebagai parent class
 - Doctor dan Patient extend Person
+
 
 Composition
 - Doctor USE class Schedule untuk jadwal dokter (composition)
 - Patient USE class Medicine untuk obat pasien (composition)
 - Hospital USE class Doctor dan Patient karena Hospital mengelola kumpulan info Doctor dan Patient. Make aggregasi krn dokter/pasien bisa ada diluar RS
 
+
 ==<< alur >>==
 1. program print objek awal
 2. program meminta input dari user
 3. program print smua objek awal dan objek yang diinput user
 
+
 ==<< dokumentasi >>==
+
 
 1. CPP
 
 <img width="410" height="828" alt="Screenshot 2025-09-30 160650" src="https://github.com/user-attachments/assets/4c870c56-1e44-4bfc-b516-22640cb36119" />
+
 
 2. Python
 
@@ -98,6 +116,7 @@ Composition
 <img width="315" height="318" alt="add" src="https://github.com/user-attachments/assets/46bcbe5a-ebf2-42c3-8c2a-155fe2c28bf6" />
 
 <img width="556" height="854" alt="printsetelahadd" src="https://github.com/user-attachments/assets/7950436b-fcc3-40bb-b57b-fa2253d658bf" />
+
 
 3. Jawa
 
